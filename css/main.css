@@ -1,0 +1,399 @@
+@charset "UTF-8";
+/* RESET */
+
+img{display: block;}
+.hidden{display: none;}
+
+/* 공통 스타일 */
+body{
+    color: #333;
+    font: 16px;
+    font-weight: 400px;
+    line-height: 1.4;
+    font-family: 'Noto Sans KR', sans-serif;
+    list-style: none;
+}
+
+.wrap{
+    width: 100%;
+
+}
+
+.inner{
+    width: 1200px;
+    margin: auto;
+    position: relative;
+    min-width: 1200px;
+}
+
+/* 헤더 영역 */
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+header > div.inner{
+    height: 114px;
+}
+header .logo{
+    width: 245px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+header div.sub-menu{display: flex;position: absolute;right: 20px;top: 50px;font-family: Arial, Helvetica, sans-serif;}
+header div.sub-menu ul.menu{display: flex;}
+header div.sub-menu ul.menu li{position: relative;}
+header div.sub-menu ul.menu li:first-child:before{display: none;}
+header div.sub-menu ul.menu li a{font-size: 12px;display: block;padding: 10px 10px;color: #fff;}
+
+
+header .icons{
+    display: flex;
+    position: relative;
+    right: 0;
+    bottom: 5px;
+    top: 5px;
+}
+header .icons li:nth-child(2){
+    position: relative;
+    top: 4px;
+    left: 10px;
+}
+
+
+/* 1차메뉴 */
+nav{
+	width: 1000px;
+    position: absolute;
+    left: 260px;
+    top: -60px;
+}
+
+nav .menu > li{
+	float: left;
+	width: 130px;
+	height: 40px;
+    text-align: center;
+    font-size: 12px;
+}
+nav .menu>li>a{
+	line-height: 30px;
+	text-align: center;
+	color: #ffffff;	
+}
+nav .menu>li>a:hover{
+    color: #333;
+}
+
+nav .submenu{
+	display: none;
+}
+nav .submenu>li{
+	width: 130px;
+	height: 20px;
+    line-height: 30px;
+}
+nav .submenu>li>a{
+	font-size: 12px;
+	text-align: center;
+	color: #fff;
+}
+nav .submenu>li>a:hover{
+    color: #333;
+}
+
+/* 슬라이드 영역: 좌우 */
+.visual{
+    clear: both;
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+}
+
+/* what you want 영역 */
+
+section.contents1 .inner{
+    width: 1200px;
+    height: 1400px;
+    margin-top: 100px;
+    clear: both;
+    position: relative;
+}
+
+section.contents1 .inner li{
+    float: left;
+}
+
+section.contents1 h2{
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+}
+
+section.contents1 p{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+section.contents1 ul li{
+    overflow: hidden;
+}
+
+section.contents1 ul li a:hover img{
+    transform: scale(1.4);
+}
+
+section.contents1 ul li a img{
+    transition : all 2.5s ease;   
+}
+
+
+/* make you lovely 영역 */
+
+section.contents2{
+    width: 100%;
+    height: 1000px;
+    margin-top: 100px;
+}
+
+section.contents2 .miumiu-bg1{
+    opacity: 50%;
+}
+
+section.contents2 h2{
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    top: 30px;
+}
+
+section.contents2 p{
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+    top: 40px;
+}
+
+section.contents2 .left-slide{
+    width: 600px;
+    height: 700px;
+    overflow: hidden;
+    position: absolute;
+    left: 300px;
+
+}
+
+section.contents2 .right-contents{
+    width: 750px;
+    height: 850px;
+    overflow: hidden;
+    position: relative;
+    right: -900px;
+    top: -50px;
+
+}
+
+section.contents2 .right-contents ul li{
+    float: left;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+
+section.contents2 .right-contents ul li:nth-child(1):hover{
+    content: url(../image/bag1_hover.png);
+}
+section.contents2 .right-contents ul li:nth-child(2):hover{
+    content: url(../image/bag2_hover.png);
+}
+
+section.contents2 .right-contents ul li:nth-child(3):hover{
+    content: url(../image/bag3_hover.png);
+}
+section.contents2 .right-contents ul li:nth-child(4):hover{
+    content: url(../image/bag4_hover.png);
+}
+
+
+/* 뉴스&이벤트 영역 */
+section.news{
+    width: 100%;
+    height: 800px;
+    position: relative;
+}
+section.news .new-bg{
+    width: 140px;
+    height: 856;
+    position: absolute;
+    right: 70px;
+    opacity: 50%;
+}
+
+section.news h2{
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 100px;
+}
+
+section.news p{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+section.news .swiper-button-next{
+    color: #333;
+    opacity: 50%;
+    right: -50px;
+    top: 430px;
+}
+
+section.news .swiper-button-prev{
+    color: #333;
+    opacity: 50%;
+    left: -50px;
+    top: 430px;
+}
+
+section.news .swiper-pagination{
+    top: 650px;
+}
+
+
+/* 뉴스&이벤트 슬라이드 */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide .newsimg {
+    display: block;
+}
+
+.swiper-button-next{
+    position: relative;
+    right: 100px;
+}
+
+/* 인스타그램 영역 */
+.instargram{
+    width: 100%;
+    height: 500px;
+}
+
+.instargram .inner h2{
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.instargram .inner p{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.mySwiper2 .swiper-slide{
+    text-align: center;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+footer{
+    width: 100%;
+    height: 300px;
+    background: #F1F1F1;
+    margin: auto;   
+}
+
+footer .bottom-logo{
+    width: 200px;
+    height: 40px;
+    position: relative;
+    top: 50px;
+}
+
+footer address{
+    width: 900px;
+    height: 110px;
+    position: relative;
+    bottom: 110px;
+    left:600px;
+    font-size: 13px;
+}
+
+footer ul.menu{
+    width: 500px;
+    display: flex;
+    position: relative;
+    top:150px;
+    left: 250px;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+footer .sns{
+    width: 150px;
+    height: 100px;
+    position: relative;
+    left: 1260px;
+    top: 120px;
+}
+
+footer div.sns ul{display: flex;justify-content: space-around;}
+
+footer p{
+    width: 600px;
+    position: relative;
+    left:600px;
+    bottom: 30px;
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+
